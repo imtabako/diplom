@@ -1,0 +1,11 @@
+{% extends 'polls/layout.html' %}
+
+{% block title %}{% endblock %}
+
+{% block content %}{% endblock %}
+    <div class="inventory">
+        <from method="post">
+            {% csrf_token %}
+            {{ form }}
+        </from>
+    </div>

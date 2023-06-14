@@ -1,0 +1,19 @@
+{% extends 'polls/layout.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Вход в систему{% endblock %}
+
+{% block content %}
+<h2>Вход в систему</h2>
+<form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Log In</legend>
+                    {{ form|crispy }}
+                </div>
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-info" type="submit">Login</button>
+            </div>
+        </form>
+{% endblock %}
