@@ -23,6 +23,18 @@ aside {
     float: left;
 }
 
+.rightcontainer {
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 80vh;
+    width: 76%;
+    overflow: auto;
+    border: 2px solid black;
+    padding: 10px 10px 50px 10px;
+    font-size: 24px;
+    float: left;
+}
+
 .mlist {
     width: 610px;
     height: 510px;

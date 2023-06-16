@@ -21,4 +21,8 @@ urlpatterns = [
     path('', views.index, name='home'),
     path('load', views.receiving, name='inv_recv'),
     path('unload', views.unload, name='inv_unload'),
+    path('items_list', views.inv_list, name='item_list'),
+    path('items_edit', views.inv_edit, name='item_edit'),
+    path('transactions', views.inv_list, name='transactions'),
+    path('map', views.map, name='map'),
 ]

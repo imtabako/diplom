@@ -21,23 +21,12 @@
             </div></li></a>
             <a href="{% url 'inv_recv' %}"><li><img class="textimage" src="{% static 'polls/img/load.png' %}"> Приемка</li></a>
             <a href="{% url 'inv_unload' %}"><li><img class="textimage" src="{% static 'polls/img/unload.png' %}"> Отгрузка</li></a>
-            <a href="{% url 'inv_list' %}"><li><img class="textimage" src="{% static 'polls/img/storageunit.png' %}"> Инвентарные позиции</li></a>
-            <a href="{% url 'inv_edit' %}"><li><img class="textimage" src="{% static 'polls/img/shelf.png' %}"> Редактирование позиций</li></a>
-            <a href="{% url 'home' %}"><li><img class="textimage" src="{% static 'polls/img/pallet.png' %}"> Операции</li></a>
+            <a href="{% url 'item_list' %}"><li><img class="textimage" src="{% static 'polls/img/storageunit.png' %}"> Инвентарные позиции</li></a>
+            <a href="{% url 'item_edit' %}"><li><img class="textimage" src="{% static 'polls/img/shelf.png' %}"> Редактирование позиций</li></a>
+            <a href="{% url 'transactions' %}"><li><img class="textimage" src="{% static 'polls/img/pallet.png' %}"> Операции</li></a>
             <a href="{% url 'map' %}"><li><img class="textimage" src="{% static 'polls/img/storage.png' %}"> Топология склада</li></a>
             <a href="{% url 'home' %}"><li><img class="textimage" src="{% static 'polls/img/admin.png' %}"> Администрирование</li></a>
             <a href="{% url 'home' %}"><li><img class="textimage" src="{% static 'polls/img/logout.png' %}"> Выход</li></a>
-            <!--
-            <a href="{% url 'home' %}"><li><i class="fa-solid fa-warehouse"></i> Главная</li></a>
-            <a href="{% url 'inv_recv' %}"><li><i class="fa-sharp fa-regular fa-scanner-gun"></i> Приемка</li></a>
-            <a href="{% url 'inv_unload' %}"><li><i class="fa-sharp fa-solid fa-address-card"></i> Отгрузка</li></a>
-            <a href="{% url 'inv_list' %}"><li><i class="fa-sharp fa-solid fa-address-card"></i> Инвентарные позиции</li></a>
-            <a href="{% url 'inv_edit' %}"><li><i class="fa-sharp fa-solid fa-address-card"></i> Редактирование позиций</li></a>
-            <a href="{% url 'home' %}"><li><i class="fa-sharp fa-solid fa-pallet-boxes"></i> Операции</li></a>
-            <a href="{% url 'map' %}"><li><i class="fa-sharp fa-solid fa-shelves"></i> Топология склада</li></a>
-            <a href="{% url 'home' %}"><li><i class="fa-sharp fa-solid fa-address-card"></i> Выход</li></a>
-            <a href="{% url 'home' %}"><li><i class="fa-solid fa-barcode-read"></i> Администрирование</li></a>
-            -->
         </ul>
     </aside>
     <main>

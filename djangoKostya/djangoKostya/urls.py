@@ -23,7 +23,8 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('polls.urls')),
-    path('inventory/', include('inventory.urls')),
-    path('map/', include('map.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+# path('map/', include('map.urls')),
+# path('inventory/', include('inventory.urls')),
